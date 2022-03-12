@@ -1,6 +1,6 @@
 const router = require('express').Router()
-const UploadImage = require('../middleware/uploadImage')
-const UploadCtrl = require('../controllers/uploadCtrl')
+const uploadImage = require('../middleware/uploadImage')
+const uploadCtrl = require('../controllers/uploadCtrl')
 
 
 

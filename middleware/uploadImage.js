@@ -1,4 +1,5 @@
 const fs = require('fs')
+//const { patch } = require('../routes/upload')
 
 module.exports = async function (req, res, next) {
     try {
@@ -7,7 +8,7 @@ module.exports = async function (req, res, next) {
         const file = req.files.file;
 
 
-        console.log(file);
+        console.log(file)
         // 1024 = 1 mb // 4096 = 4 mb
 
         if (file.size > 1024 * 1024 ){
