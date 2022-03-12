@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import {Link} from "react-router-dom";
 import axios from 'axios'
+import {showErrMsg, showSuccessMsg} from '../../utils/notification/Notification'
 
 const initialState = {
     email: '',
@@ -27,7 +28,10 @@ function Login() {
         e.preventDefault()
         try {
             const res = await axios.post('/user/login', {email, password})
-            console.log(res);
+            setUser({...user, err: '', success: res.data.msg})
+
+            localStorage.setItem('firstLogin', true)
+
         } catch (err) {
             err.response.data.msg &&
              setUser({...user, err: err.response.data.msg, success: ''})
@@ -37,6 +41,9 @@ function Login() {
 
     <div className="login_page">
         <h2>Login</h2>
+
+        {err && showErrMsg(err)}
+        {success && showSuccessMsg(success)}
 
 
         <form onSubmit={handleSubmit}>
