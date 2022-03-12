@@ -24,7 +24,7 @@ const userCtrl = {
                 return res.status(400).json({msg:"Password must be at least 6 characters."})
 
             const passwordHash = await bcrypt.hash(password, 12)
-            console.log({name, email, password, passwordHash})
+            //console.log({name, email, password, passwordHash})
             
             const newUser = {
                 name, email, password: passwordHash
