@@ -5,14 +5,14 @@ function Header() {
   return (
 
     <header>
+
         <div cloud_name="logo">
-            <h1><Link to="/">Grienz</Link></h1>
+            <h1><Link to="/"><i class="fa-solid fa-user-astronaut"></i> Grienz </Link></h1>
         </div>
 
         <ul>
-            <li><Link to="/"><i class="fa-solid fa-user"></i>Cart</Link></li>
-            
-
+            <li><Link to="/login"><i className="fas fa-solid fa-user"></i> Login </Link></li>    
+            <li><Link to="/register"><i class="fa-solid fa-right-to-bracket"></i> Sign In </Link></li>
         </ul>
 
     </header>
