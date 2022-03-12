@@ -50,6 +50,9 @@ typings/
 # Optional npm cache directory
 .npm
 
+# Nuxt.js build / generate output
+tmp/*
+
 # Optional eslint cache
 .eslintcache
 
