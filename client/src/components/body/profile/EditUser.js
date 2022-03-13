@@ -64,7 +64,7 @@ function EditUser() {
   return (
     <div className="profile_page edit_user">
       <div className="row">
-        <button onClick={() => navigate.goBack()} className="go_back">
+        <button onClick={() => navigate("/profile")} className="go_back">
           <i className="fas fa-long-arrow-alt-left"></i> Go Back
         </button>
       </div>
