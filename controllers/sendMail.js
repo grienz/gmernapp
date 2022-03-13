@@ -77,7 +77,7 @@ const sendMail = (to, url, txt) => {
                             To learn more about Grienz and all its features, check out the GitHub: <a style="color:#00d9ff" href="https://github.com/grienz" rel="noreferrer nofollow noopener" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://github.com/grienz&amp;source=gmail&amp;ust=1647102452407000&amp;usg=AOvVaw34dJjTIeatLesKODoDK42H">grienz<wbr> :)</a>
                           </p>
                           <p style="margin:20px 0">
-                            App: <a style="color:#00d9ff" href="https://github.com/grienz" rel="noreferrer nofollow noopener" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://github.com/grienz&amp;source=gmail&amp;ust=1647102452407000&amp;usg=AOvVaw34dJjTIeatLesKODoDK42H">gmernapp</a>
+                            App: <a style="color:#00d9ff" href="https://gmernapp.herokuapp.com/" rel="noreferrer nofollow noopener" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://gmernapp.herokuapp.com/&amp;source=gmail&amp;ust=1647102452407000&amp;usg=AOvVaw34dJjTIeatLesKODoDK42H">gmernapp</a>
                           </p>
                         </td>
                       </tr>
