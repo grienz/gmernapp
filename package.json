@@ -4,7 +4,7 @@
   "description": "Test my mern app",
   "main": "server.js",
   "scripts": {
-    "start": "cd server && node server.js",
+    "start": "node server.js",
     "server": "cd server && nodemon server.js",
     "client": "cd client && npm run start",
     "server-install": "cd server && npm install",
