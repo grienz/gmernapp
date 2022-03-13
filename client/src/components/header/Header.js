@@ -56,7 +56,7 @@ function Header() {
       <ul style={transForm}>
         <li>
           <a href="https://github.com/grienz">
-            <i class="fa-brands fa-github"></i> GitHub{" "}
+            <i className="fa-brands fa-github"></i> GitHub{" "}
           </a>
         </li>
         {isLogged ? (
