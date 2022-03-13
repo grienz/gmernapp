@@ -119,7 +119,7 @@ function Login() {
 
       <div className="social">
         <GoogleLogin
-          clientId="Your google client id"
+          clientId="766887798783-naip7paas9s635eahrtqiqmic1g0pie1.apps.googleusercontent.com"
           buttonText="Login with google"
           onSuccess={responseGoogle}
           cookiePolicy={"single_host_origin"}
