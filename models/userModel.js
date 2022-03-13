@@ -1,32 +1,35 @@
-const mongoose = require('mongoose')
+const mongoose = require("mongoose");
 
-
-const userSchema = new mongoose.Schema({
+const userSchema = new mongoose.Schema(
+  {
     name: {
-        type: String,
-        required: [true, "Please enter your name."],
-        trim: true
+      type: String,
+      required: [true, "Please enter your name."],
+      trim: true,
     },
     email: {
-        type: String,
-        required: [true, "Please enter your email."],
-        trim: true,
-        unique: true
+      type: String,
+      required: [true, "Please enter your email."],
+      trim: true,
+      unique: true,
     },
     password: {
-        type: String,
-        required: [true, "Please enter your password."],
+      type: String,
+      required: [true, "Please enter your password."],
     },
     role: {
-        type: Number,
-        default: 0 // 0 = user, 1 = admin
+      type: Number,
+      default: 0, // 0 = user, 1 = admin
     },
     avatar: {
-        type: String,
-        default: "https://res.cloudinary.com/gmernapp/image/upload/v1647005620/gmernapp/newuser.png"
-    }
-},{
-    timestamps: true
-})
+      type: String,
+      default:
+        "https://res.cloudinary.com/gmernapp/image/upload/v1647005620/gmernapp/newuser.png",
+    },
+  },
+  {
+    timestamps: true,
+  }
+);
 
-module.exports = mongoose.model("Users", userSchema)
+module.exports = mongoose.model("Users", userSchema);
