@@ -24,7 +24,7 @@ const userSchema = new mongoose.Schema(
     avatar: {
       type: String,
       default:
-        "https://res.cloudinary.com/gmernapp/image/upload/v1647005620/gmernapp/newuser.png",
+        (process.env.AVATAR)
     },
   },
   {
