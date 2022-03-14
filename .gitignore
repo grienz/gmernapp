@@ -108,3 +108,7 @@ dist
 
 # Travis yml file
 .travis.yml
+
+
+# vscode-settings
+.vscode
